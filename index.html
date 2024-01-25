@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de consumo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div id="fixo">
+            <div id="entradaKm">
+                <label>Km que será percorrido:</label> 
+                <input type="number" required id="km">
+            </div>
+    
+            <div id="entradaCombustivel">
+                <label>Preço médio do combustível:</label> 
+                <input type="number" required id="valorCombustivel">
+            </div>
+    
+            <div id="entradaConsumo">
+                <label>Consumo médio do veículo:</label> 
+                <input type="number" required id="consumo">
+            </div>
+    
+            <div id="veiculosCadastrados">
+                <label>Veículos pré cadastrados</label> <br>
+                <select>
+                    <option>Escolha um carro</option>
+                    <option>Kwid</option>
+                    <option>Gol</option>
+                    <option>Fiesta</option>
+                </select>
+            </div>
+        </div>
+        <div id="altera">
+            <div id="botao">
+                <label>Custo da viajem</label> <br>
+                <input type="submit" value="Calcular" id="resultado" onclick="calculoConsumo(km, combustivel, consumo)" >
+            </div>
+        </div>
+        <div>
+            <button id="reset">Reset</button>
+        </div>
+        
+    </section>
+
+
+    <script src="javaScript.js"></script>
+</body>
+</html>
